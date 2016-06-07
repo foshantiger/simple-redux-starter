@@ -1,4 +1,4 @@
-import * as types from './constant';
+import * as types from './constant'
 
 export function action() {
     return {

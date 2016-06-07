@@ -1,1 +1,1 @@
-export const YOUR_CONSTANT = 'YOUR_CONSTANT';
+export const YOUR_CONSTANT = 'YOUR_CONSTANT'

@@ -1,8 +1,8 @@
 @font-face {
     font-family: "iconfont";
     src: url('../static/fonts/iconfont.woff') format('woff'),
-    url('../static/fonts/iconfont.ttf') format('truetype'),
-    url('../static/fonts/iconfont.svg#iconfont') format('svg');
+        url('../static/fonts/iconfont.ttf') format('truetype'),
+        url('../static/fonts/iconfont.svg#iconfont') format('svg');
 }
 
 :global {
@@ -12,12 +12,26 @@
     $accent-black: #35342f;
     $accent-orange: #ec6b2d;
     $accent-red: #dd6464;
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
     body {
+        margin: 0;
+        padding: 0;
+    }
+    .page-container {
         background-color: $main-bg-color;
         color: $accent-black;
         display: flex;
         justify-content: center;
-        font-family: 'Raleway', sans-serif;
+        font-family: sans-serif;
+        height: 100vh;
+    }
+    .text-center {
+        text-align: center;
     }
     .iconfont {
         font-family: "iconfont" !important;
@@ -29,10 +43,6 @@
     }
     .main-app-container {
         padding-top: 2em;
-    }
-    .main-app-nav {
-        font-size: 2em;
-        text-align: center;
     }
     .counter-num-label {
         color: $accent-orange;
@@ -65,10 +75,17 @@
             }
         }
     }
+    .react-img {
+        display: block;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     footer {
+        position: fixed;
+        bottom: 1em;
         font-size: 0.75em;
         text-align: center;
-        padding-top: 10em;
         a {
             text-decoration: none;
             color: inherit;

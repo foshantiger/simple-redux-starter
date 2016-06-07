@@ -8,7 +8,7 @@ new WebpackDevServer(webpack(config), config.devServer)
         if (err) {
             console.log(err);
         }
-        console.log('Listening at localhost:' + config.port);
-        console.log('Opening your system browser...');
-        open('http://localhost:' + config.port + '/webpack-dev-server/');
+        console.log('Listening at 0.0.0.0:' + config.port);
+        console.log('🌎正在启动浏览器...');
+        open('http://localhost:' + config.port);
     });

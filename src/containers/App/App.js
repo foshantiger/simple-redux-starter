@@ -1,13 +1,12 @@
 import React, { PropTypes } from 'react'
 import injectTapEventPlugin from 'react-tap-event-plugin'
-import { Link } from 'react-router'
 
+//注入onTouchTap事件,在移动端请用onTouchTap替代onClick
 injectTapEventPlugin()
 
 function App({ children }) {
     return (
         <div className="page-container">
-            <Link to="counter">Link</Link>
             {children}
         </div>
     )

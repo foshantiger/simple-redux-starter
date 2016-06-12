@@ -34,7 +34,7 @@ module.exports = {
         }],
         loaders: [{
             test: /\.(css|scss)$/,
-            loader: 'style!css?modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]!sass'
+            loader: 'style!css?modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]!autoprefixer!sass'
         }, {
             test: /\.(jpg|jpeg|gif|png)$/,
             loader: 'url?limit=4000&name=images/[name].[ext]'

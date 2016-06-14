@@ -10,12 +10,12 @@ class <%= pascalEntityName %> extends Component {
     };
 
     constructor(props) {
-        super(props);
+        super(props)
     }
 
     render() {
         return (
-            <div></div>
+            <div><%= pascalEntityName %></div>
         )
     }
 }

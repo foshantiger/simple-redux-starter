@@ -49,3 +49,11 @@
 ```bash
     npm run build
 ```
+
+### 5.第三方依赖
+- [react](http://reactjs.cn/)
+- [react-router](http://react-guide.github.io/react-router-cn/)
+- [redux](https://github.com/camsong/redux-in-chinese)
+- [material-ui](http://www.material-ui.com/)
+- [classnames](https://www.npmjs.com/package/classnames)
+- [css_module](https://github.com/css-modules/css-modules)

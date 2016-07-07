@@ -1,3 +1,5 @@
+import * as types from './constant'
+
 const initState = {}
 
 export default function (state = initState, action) {

@@ -31,7 +31,7 @@ module.exports = {
             loader: 'url?limit=1024&name=fonts/[name].[ext]'
         }, {
             test: /\.(jpg|jpeg|gif|png)$/,
-            loader: 'url?limit=4000&name=images/[name].[ext]'
+            loader: 'url?limit=4000&name=images/[name].[hash:base64:5].[ext]'
         }]
     },
     plugins: [

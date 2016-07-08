@@ -30,7 +30,7 @@ module.exports = {
         preLoaders: [{
             test: /\.jsx?$/,
             loader: 'eslint',
-            exclude: /node_modules/
+            include: APP_PATH
         }],
         loaders: [{
             test: /\.(css|scss)$/,

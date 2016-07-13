@@ -41,7 +41,7 @@ module.exports = {
             loader: 'style!css'
         }, {
             test: /\.(jpg|jpeg|gif|png)$/,
-            loader: 'url?limit=4000&name=images/[name].[ext]'
+            loader: 'url?limit=4000&name=images/[name].[hash:base64:5].[ext]'
         }, {
             test: /\.jsx?$/,
             loader: 'babel',
@@ -59,7 +59,8 @@ module.exports = {
             hash: false,
             inject: 'body',
             template: './src/index.html',
-            showErrors: false
+            favicon: path.resolve(APP_PATH, 'static', 'favicon.ico'),
+            showErrors: true
         }),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('development')

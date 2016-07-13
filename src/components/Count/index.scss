@@ -1,0 +1,41 @@
+$accent-blue: #37bbe4;
+$accent-gray: #e1e0dd;
+$accent-orange: #ec6b2d;
+
+.main-app-container {
+    padding-top: 2em;
+}
+
+.counter {
+    font-size: 16px;
+    width: 100%;
+    padding-top: 1em;
+    text-align: center;
+    color: $accent-orange;
+}
+
+.label {
+    font-size: 16px;
+    padding-top: 1em;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    padding-top: 3em;
+    justify-content: center;
+    align-items: center;
+    button {
+        width: 80px;
+        height: 30px;
+        margin-right: 1em;
+        margin-left: 1em;
+        border: none;
+        background-color: #ccc;
+        &:hover {
+            background-color: $accent-gray;
+        }
+    }
+}

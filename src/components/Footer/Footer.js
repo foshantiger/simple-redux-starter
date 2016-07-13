@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
+import styles from './index.scss'
 
-export default class Footer extends Component {
-    render() {
-        return (
-            <footer>
-                <span id="footer-text-wrap">
-                    Made in SF with <span id="heart">♥</span> by MervynYang.
-                </span>
-            </footer>
-        )
-    }
+function Footer() {
+    return (
+        <footer className="text-center">
+            <span className={styles.heart}>♥</span>
+            By MervynYang.
+        </footer>
+    )
 }
+
+export default Footer

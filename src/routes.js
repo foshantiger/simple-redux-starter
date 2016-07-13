@@ -1,15 +1,19 @@
-import React from 'react'
-import { Route, IndexRoute } from 'react-router'
+import React, { PropTypes } from 'react'
+import { Router, Route } from 'react-router'
 import {
-    App,
     Counter,
     Home
 } from './containers'
 
-export default (
-    <Route path="/" component={App}>
-        <IndexRoute component={Home} />
+const Routes = ({ history }) =>
+    <Router history={history}>
+        <Route path="/" component={Home} />
         <Route path="home" component={Home} />
         <Route path="counter" component={Counter} />
-    </Route>
-)
+    </Router>
+
+Routes.propTypes = {
+    history: PropTypes.any
+}
+
+export default Routes

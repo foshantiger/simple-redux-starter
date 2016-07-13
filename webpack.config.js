@@ -5,7 +5,7 @@ const HtmlwebpackPlugin = require('html-webpack-plugin');
 const ROOT_PATH = path.resolve(__dirname);
 const BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 const APP_PATH = path.resolve(ROOT_PATH, 'src');
-const PORT = 3050;
+const PORT = 3030;
 
 module.exports = {
     port: PORT,

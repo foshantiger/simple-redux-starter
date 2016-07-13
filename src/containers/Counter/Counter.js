@@ -13,6 +13,7 @@ import styles from './counter.scss'
         actions: bindActionCreators(CounterActions, dispatch)
     })
 )
+
 class Counter extends Component {
     static propTypes = {
         counter: PropTypes.number.isRequired,
@@ -21,10 +22,12 @@ class Counter extends Component {
 
     render() {
         const { counter, actions } = this.props
+
         return (
             <div className="main-app-container">
                 <div className={styles.demo}>这是css-module样式内容，查看元素上的类名试试！</div>
                 <Count counter={counter} actions={actions} />
+                <br/>
                 <Footer />
             </div>
         )

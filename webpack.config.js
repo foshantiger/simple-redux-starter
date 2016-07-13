@@ -30,11 +30,15 @@ module.exports = {
         preLoaders: [{
             test: /\.jsx?$/,
             loader: 'eslint',
-            exclude: /node_modules/
+            include: APP_PATH
         }],
         loaders: [{
-            test: /\.(css|scss)$/,
-            loader: 'style!css?modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]!autoprefixer!sass'
+            test: /\.scss$/,
+            loader: 'style!css?modules&importLoaders=1&localIdentName=[local]___[hash:base64:5]!autoprefixer!sass',
+            include: APP_PATH
+        }, {
+            test: /\.css$/,
+            loader: 'style!css'
         }, {
             test: /\.(jpg|jpeg|gif|png)$/,
             loader: 'url?limit=4000&name=images/[name].[ext]'

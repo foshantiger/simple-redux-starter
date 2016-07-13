@@ -23,8 +23,11 @@ module.exports = {
             loaders: ['babel'],
             include: path.join(__dirname, 'src')
         }, {
-            test: /\.(css|scss)$/,
+            test: /\.scss$/,
             loader: ExtractTextPlugin.extract("style-loader", "css-loader?modules&importLoaders=1&localIdentName=[hash:base64:5]!autoprefixer!sass-loader")
+        }, {
+            test: /\.css$/,
+            loader: 'style!css'
         }, {
             test: /\.(woff|woff2|eot|ttf|svg)$/,
             exclude: /node_modules/,

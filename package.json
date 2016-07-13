@@ -1,6 +1,6 @@
 {
   "name": "simple-redux-starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Isomorphic React Starter with Redux, React Router, CSS Modules, Webpack.",
   "scripts": {
     "clean": "rimraf dist",
